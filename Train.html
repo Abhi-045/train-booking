@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train System Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Train System Management</h1>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#train-schedule">Train Schedule</a></li>
+                <li><a href="#route">Route</a></li>
+                <li><a href="#passenger">Passenger</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="dashboard">
+        
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+        
+            <!-- Total Number of Trains -->
+            <div class="dashboard-item">
+                <h3>Total Number of Trains</h3>
+                <p id="total-trains">Loading...</p>
+            </div>
+        
+            <!-- Total Number of Routes -->
+            <div class="dashboard-item">
+                <h3>Total Number of Routes</h3>
+                <p id="total-routes">Loading...</p>
+            </div>
+        
+            <!-- Upcoming Departures -->
+            <div class="dashboard-item">
+                <h3>Upcoming Departures</h3>
+                <ul id="upcoming-departures">
+                    <li>Loading...</li>
+                    <li>Loading...</li>
+                    <li>Loading...</li>
+                </ul>
+            </div>
+        
+            <!-- Recent Activity -->
+            <div class="dashboard-item">
+                <h3>Recent Activity</h3>
+                <ul id="recent-activity">
+                    <li>Loading...</li>
+                    <li>Loading...</li>
+                    <li>Loading...</li>
+                </ul>
+            </div>
+        
+            <!-- Graphical Representation of Passenger Trends -->
+            <div class="dashboard-item">
+                <h3>Passenger Trends</h3>
+                <canvas id="passenger-trends-chart" width="400" height="200"></canvas>
+            </div>
+        </section>
+        
+    </section>
+
+    <section id="train-schedule">
+        <h2>Train Schedule</h2>
+        <section id="train-schedule">
+            <h2>Train Schedule Management</h2>
+        
+            <!-- Add New Schedule Form -->
+            <div class="schedule-management-item">
+                <h3>Add New Schedule</h3>
+                <form id="add-schedule-form">
+                    <label for="train-name">Train Name:</label>
+                    <input type="text" id="train-name" name="train-name" required>
+                    <label for="departure-time">Departure Time:</label>
+                    <input type="time" id="departure-time" name="departure-time" required>
+                    <label for="arrival-time">Arrival Time:</label>
+                    <input type="time" id="arrival-time" name="arrival-time" required>
+                    <label for="route">Route:</label>
+                    <select id="route" name="route" required>
+                        <option value="route1">Route 1</option>
+                        <option value="route2">Route 2</option>
+                        <!-- Add more route options here -->
+                    </select>
+                    <button type="submit">Add Schedule</button>
+                </form>
+            </div>
+        
+            <!-- View/Edit/Delete Schedules Table -->
+            <div class="schedule-management-item">
+                <h3>View/Edit/Delete Schedules</h3>
+                <table id="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Train Name</th>
+                            <th>Departure Time</th>
+                            <th>Arrival Time</th>
+                            <th>Route</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="schedule-list">
+                        <!-- Scheduled train details will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+
+    <section id="route">
+        <h2>Route Management</h2>
+        <section id="route">
+            <h2>Route Management</h2>
+        
+            <!-- Add New Route Form -->
+            <div class="route-management-item">
+                <h3>Add New Route</h3>
+                <form id="add-route-form">
+                    <label for="route-name">Route Name:</label>
+                    <input type="text" id="route-name" name="route-name" required>
+                    <label for="starting-point">Starting Point:</label>
+                    <input type="text" id="starting-point" name="starting-point" required>
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" required>
+                    <label for="stops">Intermediate Stops:</label>
+                    <textarea id="stops" name="stops" rows="3" placeholder="Separate stops with commas"></textarea>
+                    <button type="submit">Add Route</button>
+                </form>
+            </div>
+        
+            <!-- View/Edit/Delete Routes Table -->
+            <div class="route-management-item">
+                <h3>View/Edit/Delete Routes</h3>
+                <table id="route-table">
+                    <thead>
+                        <tr>
+                            <th>Route Name</th>
+                            <th>Starting Point</th>
+                            <th>Destination</th>
+                            <th>Intermediate Stops</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="route-list">
+                        <!-- Route details will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+    </section>
+
+    <section id="passenger">
+        <h2>Passenger Information</h2>
+        <section id="passenger">
+            <h2>Passenger Information</h2>
+        
+            <!-- Passenger Search Form -->
+            <div class="passenger-info-item">
+                <h3>Search Passenger</h3>
+                <form id="search-passenger-form">
+                    <label for="passenger-name">Passenger Name:</label>
+                    <input type="text" id="passenger-name" name="passenger-name" placeholder="Enter passenger name">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        
+            <!-- Passenger Details Display -->
+            <div class="passenger-info-item">
+                <h3>Passenger Details</h3>
+                <div id="passenger-details">
+                    <!-- Passenger details will be displayed here -->
+                </div>
+            </div>
+        </section>
+        
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <section id="about">
+            <h2>About</h2>
+        
+            <!-- Description -->
+            <div class="about-item">
+                <h3>Description</h3>
+                <p>
+                    Provide a brief overview of the train system, including its purpose, history, and mission. Describe its role in transportation and its significance to passengers and stakeholders.
+                </p>
+            </div>
+        
+            <!-- History -->
+            <div class="about-item">
+                <h3>History</h3>
+                <p>
+                    Outline the history of the train system, including key milestones, developments, and significant events that have shaped its evolution over time.
+                </p>
+            </div>
+        
+            <!-- Mission -->
+            <div class="about-item">
+                <h3>Mission</h3>
+                <p>
+                    State the mission or objectives of the train system, highlighting its commitment to providing safe, reliable, and efficient transportation services to passengers.
+                </p>
+            </div>
+        
+            <!-- Vision -->
+            <div class="about-item">
+                <h3>Vision</h3>
+                <p>
+                    Share the vision for the future of the train system, outlining goals, aspirations, and plans for expansion, improvement, and innovation.
+                </p>
+            </div>
+        
+            <!-- Other Relevant Details -->
+            <div class="about-item">
+                <h3>Other Relevant Details</h3>
+                <p>
+                    Include any additional information about the train system that may be of interest to users, such as service areas, operational hours, ticketing options, and contact information.
+                </p>
+            </div>
+        </section>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Train System Management</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

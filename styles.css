@@ -1,0 +1,156 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+    font:bold;
+    text-align: center;
+    font-style: italic;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #2e2e2e;
+    padding: 20px;
+    text-align: center;
+    color: #00aeff;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Main Section Styles */
+section {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* Dashboard Section Styles */
+#dashboard {
+    background-color: #f79393;
+    border-radius: 10px;
+}
+
+.dashboard-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-item h3 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #333;
+}
+.dashboard-item p
+{
+    text-align: center;
+}
+.dashboard-item li
+{
+    text-align: center;
+}
+/* Schedule Management Section Styles */
+#train-schedule {
+    background-color: #2196F3;
+    border-radius: 10px;
+}
+
+.schedule-management-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-management-item h3 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Route Management Section Styles */
+#route {
+    background-color: #E91E63;
+    border-radius: 10px;
+}
+
+.route-management-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.route-management-item h3 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Passenger Information Section Styles */
+#passenger {
+    background-color: #9C27B0;
+    border-radius: 10px;
+}
+
+.passenger-info-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.passenger-info-item h3 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #333;
+}
+
+/* About Section Styles */
+#about {
+    background-color: #FF5722;
+    border-radius: 10px;
+}
+
+.about-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-item h3 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #333;
+}
